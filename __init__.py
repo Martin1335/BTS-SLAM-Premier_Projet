@@ -7,10 +7,10 @@ import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
 
-@app.route('/hello')
+@app.route('/')
 def hello_world():
     return render_template('hello.html') #Commentaire
 
 
-if __name__ == "__main__":
+if __name__ != "__main__":
   app.run(debug=True)
